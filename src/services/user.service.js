@@ -1,4 +1,7 @@
 import db from "../db/db.js";
+import bcrypt from "bcrypt";
+
+
 
 export const findUserByUsername = async (username) => {
     const [results] = await db.query(
